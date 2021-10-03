@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        th, td{
+            padding: 10px;
+            
+        }
+
+        tabel, td, th {
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">WhatsApp Messaging App</h2>
+
+    <div class="container" style="text-align: center;">
+        <div class="row">
+            <div class="col-sm-12 md-6 lg-12" style="text-align: center; font-size: 20px; ">
+                <Table>
+                   
+
+                    <tr>
+                        <th>Customers Number</th>
+                        <th>WhatsApp Link</th>
+                    </tr>
+
+                    <tr>
+                        <td>+92 317 2746242</td>
+                        <td> <a href="" id = "a" onclick="msg()"><i class="fab fa-whatsapp">
+                            
+
+                        </i></a> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>+92 317 4737112</td>
+                        <td> <a href="" onclick="msg1()" id = "b" ><i class="fab fa-whatsapp"></i></a> </td>
+                    </tr>
+
+                    <tr>
+                        <td>+92 317 2746242</td>
+                        <td> <a href="" id = "a" onclick="msg()"><i class="fab fa-whatsapp">
+                            
+
+                        </i></a> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>+92 317 4737112</td>
+                        <td> <a href="" onclick="msg1()" id = "b" ><i class="fab fa-whatsapp"></i></a> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>+92 317 2746242</td>
+                        <td> <a href="" id = "a" onclick="msg()"><i class="fab fa-whatsapp">
+                            
+
+                        </i></a> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>+92 317 4737112</td>
+                        <td> <a href="" onclick="msg1()" id = "b" ><i class="fab fa-whatsapp"></i></a> </td>
+                    </tr>
+                    
+
+
+                </Table>
+            </div>
+        </div>
+    </div>
+    
+<script>
+    function msg(){
+        var msg = window.prompt("Enter Message to sent")
+        document.getElementById("a").href = "https://wa.me/+923172746242?text="+msg; 
+        
+    }
+
+    function msg1(){
+        var msg = window.prompt("Enter Message to sent")
+        document.getElementById("b").href = "https://wa.me/+923174737112?text="+msg; 
+        
+    }
+    
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+</html>
